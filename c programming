@@ -1,0 +1,10 @@
+//How to calculate sum of a problem//
+include <stdio.h>
+int main()
+{
+  int a,b,sum;
+  a = 33; b = 44;
+  sum a + b;
+  printf("sum is %d", sum)
+  return 0;
+  }
