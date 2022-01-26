@@ -1,1 +1,1 @@
-This is basic c programming entry level code that i made while learning
+These are the basic c programming entry level code that I made while learning.
