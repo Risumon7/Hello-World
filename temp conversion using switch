@@ -1,0 +1,39 @@
+#include <stdio.h>
+int main()
+    {
+        int choice;
+        float Temp,convertedTemp;
+        printf("Temperature conversion menu:\n");
+        printf("case 1: celcius to fahrenheit\n");
+        printf("case 2: fahrenheit to celcius\n");
+        printf("Enter your choice\n");
+        scanf("%d", &choice);
+    
+        switch(choice)
+        {
+            case 1: 
+            {
+                printf("Enter the celcius temperature\n");
+                scanf("%f", &Temp);
+                convertedTemp = 1.8*Temp + 32;
+                printf("The converted fahrenheit temperature is: %f", convertedTemp);
+                break;
+            }
+            
+            case 2:
+            { 
+                printf("Enter the fahrenheit temperature\n");
+                scanf("%f", &Temp);
+                convertedTemp = (Temp - 32) / 1.8;
+                printf("The converted celcius temperature is: %f", convertedTemp);
+                break;
+            }
+            
+            default:
+            {
+                printf("Not a valid input\n");
+            }
+        }
+    return 0;
+    }
+                
