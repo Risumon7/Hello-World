@@ -1,0 +1,21 @@
+// 0,1,1,2,3,5,8,13, ...,n
+#include <stdio.h>
+int main()
+    {
+        int n, first = 0, second = 1, fib,count = 0;
+        printf("Enter the range n:\n");
+        scanf("%d", &n);
+        while (count < n) {
+            if(count <= 1) {
+                fib = count;
+            }
+            else {
+                fib = first + second;
+                first = second;
+                second = fib;
+            }
+            printf("%d ", fib);
+            count++;
+        }
+        return 0;
+    }
