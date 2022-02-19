@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+    {
+        int value, i, pos=-1;
+        int num[] = {22,43,67,87,56,47,90,76};
+        printf("Enter the value you want to search:\n");
+        scanf("%d", &value);
+        for(i=0; i<8; i++) {
+            if(value == num[i]) {
+                pos = i+1;
+                break;
+            }
+        }
+        if(pos==-1) {
+            printf("The item is not found\n");
+        }
+        else {
+            printf("The value is at position %d\n",pos);
+        }
+        return 0;
+    }
