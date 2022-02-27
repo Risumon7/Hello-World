@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+
+    {
+        char s[]= "Suparna";
+    
+        int len = strlen(s);
+        printf("Length = %d", len);
+        return 0;
+    }
