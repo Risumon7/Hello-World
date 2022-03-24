@@ -1,0 +1,15 @@
+//Function Intro
+
+#include<stdio.h>
+int main()
+{
+    sum(33,66,77);
+    sum(21,976,65);
+    return 0;
+}
+
+int sum(int a, int b, int c)
+{
+   printf("The Sum is: %d\n", a+b+c);
+}
+
