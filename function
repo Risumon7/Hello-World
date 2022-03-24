@@ -1,0 +1,18 @@
+//Function: Area of a triangle
+
+#include<stdio.h>
+double areatriangle(double b, double h);
+int main()
+{
+    double base, height;
+    printf("Enter base and height of a triangle:\n");
+    scanf("%lf %lf",&base,&height);
+    double result = areatriangle(base,height);
+    printf("The area is: %0.1lf\n", result);
+    return 0;
+}
+
+    double areatriangle(double b, double h)
+    {
+        return 0.5 * b * h;
+    }
